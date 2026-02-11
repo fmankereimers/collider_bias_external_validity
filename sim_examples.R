@@ -1,7 +1,6 @@
 ##############################
 ### required packages
 library(dplyr)
-library(purrr)
 library(ggplot2)
 library(ggsci)
 library(ggh4x)
