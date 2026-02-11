@@ -1,4 +1,4 @@
-Understanding potential collider bias in external validity analysis depending on types of effect measure modifiers. Manke-Reimers F, Brugger V, Webster-Clark M. 2026
+*Understanding potential collider bias in external validity analysis depending on types of effect measure modifiers*. Manke-Reimers F, Brugger V, Webster-Clark M. 2026
 
 R code for the simulated examples
 
