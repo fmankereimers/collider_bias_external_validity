@@ -107,9 +107,6 @@ for (n in sample_sizes){
 # generate results from Monte Carlo simulation
 df_output = do.call(rbind, output)
 
-df_output = mutate(df_output, percent_bias = (100*(TATE - estimate) /
-                                                  (TATE - SATE)))
-
 df_output_means = df_output %>%
   group_by(covariates, n, soca , soi) %>%
   summarise(across(c(SATE, TATE, estimate), \(x) round(mean(x), 4), .names = "mean_{.col}"),
@@ -216,9 +213,6 @@ for (j in 1:length(covariates)){
 }
 
 df_output2 = do.call(rbind, output2)
-
-df_output2 = mutate(df_output2, percent_bias = (100*(TATE - estimate) /
-                                         (TATE - SATE)))
 
 df_output2_means = df_output2 %>%
   group_by(covariates) %>%
